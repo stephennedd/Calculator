@@ -1,4 +1,4 @@
-// Generated from D:/Prog/COS/Seminar/Week 5 - Codegen/Assignment/src/nl/saxion/cos\Calc.g4 by ANTLR 4.8
+// Generated from /Users/stephennedd/Google Drive/Saxion_Third_Year_IT/Retakes/compilers_os/Calculator/src/nl/saxion/cos/Calc.g4 by ANTLR 4.9.2
 package nl.saxion.cos;
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
@@ -32,6 +32,13 @@ public class CalcBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements C
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
 	@Override public T visitExMulOp(CalcParser.ExMulOpContext ctx) { return visitChildren(ctx); }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
+	@Override public T visitExTernary(CalcParser.ExTernaryContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
