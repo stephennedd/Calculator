@@ -58,4 +58,11 @@ public interface CalcVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitExParentheses(CalcParser.ExParenthesesContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code ExFloatLiteral}
+	 * labeled alternative in {@link CalcParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExFloatLiteral(CalcParser.ExFloatLiteralContext ctx);
 }
